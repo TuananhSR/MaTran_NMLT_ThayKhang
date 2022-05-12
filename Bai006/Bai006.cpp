@@ -5,12 +5,12 @@
 #include <fstream>
 #include <string>
 using namespace std;
-void Nhap(double[][500], int&, int&);
-void Xuat(double[][500], int, int);
+void Nhap(float[][500], int&, int&);
+void Xuat(float[][500], int, int);
 
 int main()
 {
-	double b[500][500];
+	float b[500][500];
 	int k;
 	int l;
 	Nhap(b, k, l);
@@ -21,7 +21,7 @@ int main()
 	return 0;
 }
 
-void Nhap(double a[][500], int& m, int& n)
+void Nhap(float a[][500], int& m, int& n)
 {
 	cout << "Nhap m: ";
 	cin >> m;
@@ -32,7 +32,7 @@ void Nhap(double a[][500], int& m, int& n)
 			cin >> a[i][j];
 }
 
-void Xuat(double a[][500], int m, int n)
+void Xuat(float a[][500], int m, int n)
 {
 	for (int i = 0; i < m; i++)
 	{
